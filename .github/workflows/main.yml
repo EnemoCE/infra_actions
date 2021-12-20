@@ -61,6 +61,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
+          no-cache: true
           tags: enemoce/infra_actions:latest
   deploy:
     runs-on: ubuntu-latest
